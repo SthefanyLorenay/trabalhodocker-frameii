@@ -1,0 +1,8 @@
+version: "3.9" #mostra a versão do docker
+services:      #mostra os serviços que eu irei utilizar
+  web:         #web é um serviço que usa a imagem criado a partir do dockerflile
+    build: .
+    ports:
+      - "8000:5000"
+  redis:
+    image: "redis:alpine"
